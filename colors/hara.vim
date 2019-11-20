@@ -13,6 +13,7 @@ let s:colors.white       = ['#ffffff', 231]
 let s:colors.rose        = ['#d7afaf', 181]
 let s:colors.blue        = ['#0087af', 32]
 let s:colors.red         = ['#d70000', 160]
+let s:colors.spell       = ['#ff5f87', 204]
 
 " Highlighting function
 " Cribbed from badwolf, gruvbox.
@@ -102,7 +103,7 @@ function! s:setLight()
 
   " Spelling
   call s:highlight('SpellLocal', 'black', 'white', 'italic')
-  call s:highlight('SpellBad', 'black', 'white', 'underline')
+  call s:highlight('SpellBad', 'black', 'spell', 'underline')
   call s:highlight('SpellCap', 'black', 'white', 'underline')
 
   " Markdown
