@@ -41,7 +41,7 @@ endfunction
 function! s:setLight()
   set background=light
   " Base colors.
-  call s:highlight('Normal', 'deepgrey', 'white')
+  call s:highlight('Normal', 'grey', 'white')
   call s:highlight('NonText', 'darkgrey')
   call s:highlight('comment', 'grey')
   call s:highlight('constant', 'black', 'white', 'bold')
@@ -65,8 +65,8 @@ function! s:setLight()
  
   " CursorLine
   call s:highlight('Cursor', 'darkgrey')
-  call s:highlight('CursorLine', 'black', 'white', 'bold')
-  call s:highlight('CursorLineNr', 'rose')
+  call s:highlight('CursorLine', 'black', 'white', 'NONE')
+  call s:highlight('CursorLineNr', 'blue')
 
   " Status line
   call s:highlight('StatusLine', 'white', 'deepgrey')
@@ -109,12 +109,12 @@ function! s:setLight()
   call s:highlight('markdownHeadingDelimiter', 'black', '', 'bold')
   call s:highlight('markdownListMarker', 'black', '', 'bold')
   call s:highlight('markdownCodeDelimiter', 'black', '', 'bold')
-  call s:highlight('markdownH1', 'black', '', 'bold')
-  call s:highlight('markdownH2', 'black', '', 'bold')
-  call s:highlight('markdownH3', 'black', '', 'bold')
-  call s:highlight('markdownH4', 'black', '', 'bold')
-  call s:highlight('markdownH5', 'black', '', 'bold')
-  call s:highlight('markdownH6', 'black', '', 'bold')
+  call s:highlight('markdownH1', 'deepgrey', '', 'bold')
+  call s:highlight('markdownH2', 'deepgrey', '', 'bold')
+  call s:highlight('markdownH3', 'deepgrey', '', 'bold')
+  call s:highlight('markdownH4', 'deepgrey', '', 'bold')
+  call s:highlight('markdownH5', 'deepgrey', '', 'bold')
+  call s:highlight('markdownH6', 'deepgrey', '', 'bold')
 
 endfunction
 
