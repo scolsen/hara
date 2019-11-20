@@ -10,7 +10,7 @@ let s:colors.darkgrey    = ['#262626', 235]
 let s:colors.grey        = ['#808080', 244]
 let s:colors.faint       = ['#eeeeee', 255]
 let s:colors.white       = ['#ffffff', 231]
-let s:colors.rose        = ['#d7afaf', 181]
+let s:colors.rose        = ['#ff5f87', 204]
 let s:colors.blue        = ['#0087af', 32]
 let s:colors.red         = ['#d70000', 160]
 let s:colors.spell       = ['#ff5f87', 204]
@@ -57,7 +57,7 @@ function! s:setLight()
   call s:highlight('Underlined', 'darkgrey')
   call s:highlight('label', 'darkgrey')
   call s:highlight('operator', 'rose')
-  call s:highlight('delimiter', 'rose')
+  call s:highlight('delimiter', 'grey')
   
   " Inline notifications. 
   call s:highlight('Todo', 'black', 'white', 'bold')
@@ -103,7 +103,7 @@ function! s:setLight()
 
   " Spelling
   call s:highlight('SpellLocal', 'black', 'white', 'italic')
-  call s:highlight('SpellBad', 'black', 'spell', 'underline')
+  call s:highlight('SpellBad', 'spell', 'white', 'underline')
   call s:highlight('SpellCap', 'black', 'white', 'underline')
 
   " Markdown
