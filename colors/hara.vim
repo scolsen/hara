@@ -65,7 +65,7 @@ function! s:setLight()
  
   " CursorLine
   call s:highlight('Cursor', 'darkgrey')
-  call s:highlight('CursorLine', 'black', 'white', 'NONE')
+  call s:highlight('CursorLine', 'black', 'white', 'bold')
   call s:highlight('CursorLineNr', 'rose')
 
   " Status line
@@ -73,7 +73,7 @@ function! s:setLight()
   call s:highlight('StatusLineNC', 'black', 'grey')
   
   " Windows
-  call s:highlight('VertSplit', 'black')
+  call s:highlight('VertSplit', 'white')
 
   " Diff 
   call s:highlight('DiffChange', 'black', 'white')
