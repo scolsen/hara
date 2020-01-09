@@ -12,6 +12,7 @@ let s:colors.faint       = ['#eeeeee', 255]
 let s:colors.white       = ['#ffffff', 231]
 let s:colors.rose        = ['#ff5f87', 204]
 let s:colors.blue        = ['#0087af', 32]
+let s:colors.corn	 = ['#ffffd7', 230]
 let s:colors.red         = ['#d70000', 160]
 let s:colors.spell       = ['#ff5f87', 204]
 
@@ -78,10 +79,10 @@ function! s:setLight()
   call s:highlight('VertSplit', 'white')
 
   " Diff 
-  call s:highlight('DiffChange', 'black', 'grey')
+  call s:highlight('DiffChange', 'black', 'corn')
   call s:highlight('DiffText', 'black', 'white')
   call s:highlight('DiffAdd', 'faint', 'blue')
-  call s:highlight('DiffDelete', 'black', 'rose')
+  call s:highlight('DiffDelete', 'rose', 'rose')
 
   " Folds
   call s:highlight('Folded', 'darkgrey')
