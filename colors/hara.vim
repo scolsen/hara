@@ -80,7 +80,7 @@ function! s:setLight()
 
   " Diff 
   call s:highlight('DiffChange', 'black', 'corn')
-  call s:highlight('DiffText', 'black', 'white')
+  call s:highlight('DiffText', 'black', 'corn')
   call s:highlight('DiffAdd', 'faint', 'blue')
   call s:highlight('DiffDelete', 'rose', 'rose')
 
