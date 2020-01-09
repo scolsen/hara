@@ -78,10 +78,10 @@ function! s:setLight()
   call s:highlight('VertSplit', 'white')
 
   " Diff 
-  call s:highlight('DiffChange', 'black', 'white')
+  call s:highlight('DiffChange', 'black', 'grey')
   call s:highlight('DiffText', 'black', 'white')
-  call s:highlight('DiffAdd', 'white', 'black')
-  call s:highlight('DiffDelete', 'rose', 'white')
+  call s:highlight('DiffAdd', 'faint', 'blue')
+  call s:highlight('DiffDelete', 'black', 'rose')
 
   " Folds
   call s:highlight('Folded', 'darkgrey')
