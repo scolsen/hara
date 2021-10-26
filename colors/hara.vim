@@ -96,6 +96,11 @@ function! s:setLight()
   call s:highlight('DiffAdd', 'black', 'paleGreen')
   call s:highlight('DiffDelete', 'rose', 'rose')
 
+  " Vim signify signs
+  call s:highlight('SignifySignAdd', 'paleGreen', 'null', 'bold')
+  call s:highlight('SignifySignDelete', 'rose', 'null', 'bold')
+  call s:highlight('SignifySignChange', 'black', 'null', 'bold')
+
   " Folds
   call s:highlight('Folded', 'blue', 'null')
   call s:highlight('FoldColumn', 'blue', 'null')
