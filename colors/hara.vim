@@ -128,16 +128,16 @@ function! s:setLight()
 
   " Markdown
   call s:highlight('markdownLinkText', 'blue', '', 'underline')
-  call s:highlight('markdownHeadingDelimiter', 'deepgrey', 'null', 'bold,underline')
+  call s:highlight('markdownHeadingDelimiter', '', '', 'NONE')
   call s:highlight('markdownListMarker', 'black', '', 'bold')
   call s:highlight('markdownCodeDelimiter', 'rose', 'null', 'bold')
   call s:highlight('markdownItalic', 'null', '', 'NONE')
-  call s:highlight('markdownH1', 'deepgrey', 'null', 'bold,underline')
-  call s:highlight('markdownH2', 'deepgrey', 'null', 'bold,underline')
-  call s:highlight('markdownH3', 'deepgrey', 'null', 'bold,underline')
-  call s:highlight('markdownH4', 'deepgrey', 'null', 'bold,underline')
-  call s:highlight('markdownH5', 'deepgrey', 'null', 'bold,underline')
-  call s:highlight('markdownH6', 'deepgrey', 'null', 'bold,underline')
+  call s:highlight('markdownH1', 'deepgrey', 'null', 'bold')
+  call s:highlight('markdownH2', 'deepgrey', 'null', 'bold')
+  call s:highlight('markdownH3', 'deepgrey', 'null', 'bold')
+  call s:highlight('markdownH4', 'deepgrey', 'null', 'bold')
+  call s:highlight('markdownH5', 'deepgrey', 'null', 'bold')
+  call s:highlight('markdownH6', 'deepgrey', 'null', 'bold')
 
 endfunction
 
